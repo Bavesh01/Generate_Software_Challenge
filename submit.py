@@ -10,10 +10,10 @@ with open('challenge.json') as json_file:
 
 
 solution = [decode(str) for str in json_data['challenge']]
-print(solution)
+#print(solution)
 
 BASE_URL = 'https://generate-coding-challenge-server-rellb.ondigitalocean.app/'
-
+#json_sol = json.dumps(solution)
 response = rq.post(BASE_URL+'submit/{}'.format(token), json=solution)
 print(response.status_code)
 print(response.json())

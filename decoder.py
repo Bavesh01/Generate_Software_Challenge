@@ -47,7 +47,10 @@ def decode(code):
   EDGE CASES:
   0. empty string
   1. invalid strings
-  2. 
+  2. Spl characters in first block
+  ------
+  3. Repeated characters
+  4. Non hash nesting
   '''  
 
   # Analyze by data block
