@@ -8,6 +8,7 @@ with open('token.txt') as t:
 with open('challenge.json') as json_file:
   json_data = json.load(json_file)
 
+
 solution = [decode(str) for str in json_data['challenge']]
 print(solution)
 
